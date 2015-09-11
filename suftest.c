@@ -178,17 +178,17 @@ main(int argc, const char *argv[]) {
   fclose(fp);
 
   /* Construct the suffix array. */
-  fprintf(stderr, "%s: %ld bytes ... ", fname, n);
-  start = clock();
+  //~ fprintf(stderr, "%s: %ld bytes ... ", fname, n);
+  //~ start = clock();
   if(sais(T, SA, (int)n) != 0) {
     fprintf(stderr, "%s: Cannot allocate memory.\n", argv[0]);
     exit(EXIT_FAILURE);
   }
-  finish = clock();
-  fprintf(stderr, "%.4f sec\n", (double)(finish - start) / (double)CLOCKS_PER_SEC);
+  //~ finish = clock();
+  //~ fprintf(stderr, "%.4f sec\n", (double)(finish - start) / (double)CLOCKS_PER_SEC);
 
   /* Check the suffix array. */
-  if(sufcheck(T, SA, (int)n, 1) != 0) { exit(EXIT_FAILURE); }
+  //~ if(sufcheck(T, SA, (int)n, 1) != 0) { exit(EXIT_FAILURE); }
 
   /* Deallocate memory. */
   free(SA);

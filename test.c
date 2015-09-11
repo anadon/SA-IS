@@ -50,7 +50,7 @@ main(int argc, const char *argv[]) {
   int i, j, n, p1, p3;
   unsigned int bits;
 
-  fprintf(stderr, "start test...\n");
+  //~ fprintf(stderr, "start test...\n");
   for(n = 1; n <= 24; ++n) {
     T1 = malloc(n * sizeof(unsigned char));
     T1BWT = malloc(n * sizeof(unsigned char));
@@ -155,7 +155,7 @@ main(int argc, const char *argv[]) {
       }
 
     }
-    fprintf(stderr, "  n=%2d : success\n", n);
+    //~ fprintf(stderr, "  n=%2d : success\n", n);
     free(T1);
     free(T1BWT);
     free(T3);
@@ -164,7 +164,7 @@ main(int argc, const char *argv[]) {
     free(SA3);
     free(A);
   }
-  fprintf(stderr, "finish test\n");
+  //~ fprintf(stderr, "finish test\n");
 
   return 0;
 }
